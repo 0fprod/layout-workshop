@@ -1,0 +1,13 @@
+@mixin palette($color, $index) {
+  @for $i from $index to 0 {
+    &:nth-child(#{$i}) {
+      background-color: darken($color, ($index * $index) - ($index * $i) + $index);
+    }
+  }
+
+  @for $i from 6 to 10 {
+    &:nth-child(#{$i}) {
+      background-color: lighten($color, $index * $i - 10);
+    }
+  }
+}

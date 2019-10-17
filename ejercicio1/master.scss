@@ -1,0 +1,55 @@
+@import './scss/reset.scss';
+@import './scss/mixins/box-size';
+@import './scss/mixins/pallete';
+@import './scss/variables/colors';
+@import './scss/mixins/container';
+$baseIndex: 4;
+
+body {
+  width           : 100vw;
+  height          : 100vh;
+  background-color: #CFC5F6;
+  overflow        : hidden;
+  display         : flex;
+  flex-direction  : column;
+}
+
+.red {
+  @include container;
+
+  div {
+    @include box-size;
+    @include palette($baseColor1, $baseIndex);
+  }
+
+  .base {
+    background-color: $baseColor1;
+  }
+}
+
+.green {
+  @include container;
+
+  div {
+    @include box-size;
+    @include palette($baseColor2, $baseIndex);
+  }
+
+  .base {
+    background-color: $baseColor2;
+  }
+}
+
+.blue {
+  @include container;
+
+  div {
+    @include box-size;
+    @include palette($baseColor3, $baseIndex);
+
+  }
+
+  .base {
+    background-color: $baseColor3;
+  }
+}

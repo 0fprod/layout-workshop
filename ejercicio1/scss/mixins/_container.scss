@@ -1,0 +1,5 @@
+@mixin container {
+  display: flex;
+  flex-direction: row;
+  margin: 1px;
+}
