@@ -8,4 +8,5 @@ npm run ejercicio3
 npm run ejercicio4
 ```
 
-Run one of them for each exercise.
+Execute one of them for each exercise.
+The exercise 2 loads theme-dark.scss by default, you can change it to theme-light.scss inside of the ejercicio2/index.html file
