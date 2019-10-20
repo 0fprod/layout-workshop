@@ -1,0 +1,47 @@
+$lighten-darken-percentage: 30%;
+$contrast-dark: #FFF;
+$contrast-light: #000;
+
+$primary: #845EC2;
+$accent: #B39CD0;
+$background: #00C9A7;
+$foreground: #FBEAFF;
+
+
+$theme-colors: (
+  'primary' : (
+    'base': $primary,
+    'light': lighten($primary, $lighten-darken-percentage),
+    'dark': darken($primary, $lighten-darken-percentage)
+  ),
+  'accent' : (
+    'base': $accent,
+    'light': lighten($accent, $lighten-darken-percentage),
+    'dark': darken($accent, $lighten-darken-percentage)
+  ),
+  'background' : (
+    'base': $background,
+    'light': lighten($background, $lighten-darken-percentage),
+    'dark': darken($background, $lighten-darken-percentage)
+  ),
+  'foreground' : (
+    'base': $foreground,
+    'light': lighten($foreground, $lighten-darken-percentage),
+    'dark': darken($foreground, $lighten-darken-percentage)
+  )
+);
+
+$contrast-colors: (
+  'dark': (
+    'primary': rgba($contrast-dark,1),
+    'secondary': rgba($contrast-dark, .70),
+    'disabled': rgba($contrast-dark, .5),
+    'hint': rgba($contrast-dark, .12)
+  ),
+  'light': (
+    'primary': rgba($contrast-light, .87),
+    'secondary': rgba($contrast-light, .54),
+    'disabled': rgba($contrast-light, .38),
+    'hint': rgba($contrast-light, .12)
+  ),
+);

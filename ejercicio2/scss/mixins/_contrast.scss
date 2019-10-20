@@ -1,0 +1,5 @@
+@import './../functions/contrast';
+
+@mixin contrast($background: 'light', $type: 'primary') {
+  color: contrast($background, $type)
+}

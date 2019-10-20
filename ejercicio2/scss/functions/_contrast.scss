@@ -1,0 +1,6 @@
+@import './../variables/colors';
+
+@function contrast($background: 'light', $type: 'primary') {
+  $map: map-get($contrast-colors, $background);
+  @return map-get($map, $type);
+}
