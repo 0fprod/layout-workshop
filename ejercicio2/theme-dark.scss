@@ -1,1 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+@import './scss/reset.scss';
+@import './scss/mixins/layout';
+@import './scss/functions/theme-color';
+@import './scss/mixins/text-settings';
+@import './scss/mixins/contrast';
+
+body {
+  width      : 100vw;
+  height     : 100vh;
+  font-family: 'Raleway';
+}
+
+.layout {
+  .side {
+    @include contrast('dark', 'primary');
+    background-color: theme-color('background','dark');
+
+    nav span:hover {
+      @include contrast('light');
+      background-color:theme-color('background','light');
+    }
+  }
+
+  .main {
+    background-color: theme-color('primary','dark');
+    .header{
+       @include contrast('dark')
+    }
+    .block{
+      background-color: theme-color('foreground','dark');
+      .warning{
+        @include contrast('dark', 'primary');
+        @include text-settings('xl')
+      }
+    }
+  }
+}

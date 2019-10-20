@@ -24,5 +24,17 @@ body {
 
   .main {
     background-color: theme-color('accent');
+    .header{
+     h6{
+       @include contrast('light',)
+     } 
+    }
+    .block{
+      background-color: theme-color('foreground');
+      .warning{
+        color: theme-color('background');
+        @include text-settings('xl');
+      }
+    }
   }
 }

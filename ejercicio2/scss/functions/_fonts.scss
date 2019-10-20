@@ -1,3 +1,5 @@
+@import './../variables/fonts';
+
 @function text-scale($level) {
   @return map-get(map-get($text-settings, $level), 'font-size');
 }
